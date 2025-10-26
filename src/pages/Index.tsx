@@ -26,21 +26,24 @@ export default function Index() {
     {
       name: "Базовый",
       speed: "100 Мбит/с",
-      price: 490,
+      price: 0,
+      originalPrice: 490,
       features: ["Безлимитный интернет", "Wi-Fi роутер в подарок", "Круглосуточная поддержка", "Без скрытых платежей"],
       popular: false
     },
     {
       name: "Оптимальный",
       speed: "300 Мбит/с",
-      price: 690,
+      price: 0,
+      originalPrice: 690,
       features: ["Безлимитный интернет", "Wi-Fi роутер в подарок", "150+ ТВ каналов", "Онлайн-кинотеатр", "Круглосуточная поддержка"],
       popular: true
     },
     {
       name: "Максимальный",
       speed: "500 Мбит/с",
-      price: 990,
+      price: 0,
+      originalPrice: 990,
       features: ["Безлимитный интернет", "Премиум Wi-Fi роутер", "200+ ТВ каналов HD", "3 онлайн-кинотеатра", "Приоритетная поддержка", "Статический IP"],
       popular: false
     }
@@ -178,8 +181,9 @@ export default function Index() {
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <div className="text-center py-4">
-                        <div className="text-4xl font-bold">{tariff.price} ₽</div>
-                        <div className="text-muted-foreground">в месяц</div>
+                        <div className="text-4xl font-bold text-primary">{tariff.price} ₽</div>
+                        <div className="text-muted-foreground">первый месяц</div>
+                        <div className="text-sm text-muted-foreground mt-2">Затем {tariff.originalPrice} ₽/мес</div>
                       </div>
                       <ul className="space-y-3">
                         {tariff.features.map((feature, idx) => (
@@ -214,8 +218,9 @@ export default function Index() {
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <div className="text-center py-4">
-                        <div className="text-4xl font-bold">{tariff.price} ₽</div>
-                        <div className="text-muted-foreground">в месяц</div>
+                        <div className="text-4xl font-bold text-primary">{tariff.price} ₽</div>
+                        <div className="text-muted-foreground">первый месяц</div>
+                        <div className="text-sm text-muted-foreground mt-2">Затем {tariff.originalPrice} ₽/мес</div>
                       </div>
                       <ul className="space-y-3">
                         {tariff.features.map((feature, idx) => (
