@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useToast } from '@/hooks/use-toast';
+import TariffCalculator from '@/components/TariffCalculator';
 
 export default function Index() {
   const [formData, setFormData] = useState({ name: '', phone: '', address: '' });
@@ -128,6 +129,16 @@ export default function Index() {
               />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gradient-to-br from-secondary/5 to-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Калькулятор тарифа</h2>
+            <p className="text-xl text-muted-foreground">Подберите оптимальный тариф под ваши потребности</p>
+          </div>
+          <TariffCalculator tariffs={tariffs} />
         </div>
       </section>
 
