@@ -94,7 +94,7 @@ export default function Index() {
           </nav>
           <Button className="hidden md:flex">
             <Icon name="Phone" size={18} className="mr-2" />
-            8 800 550-05-00
+            8 995 150 88 33
           </Button>
         </div>
       </header>
@@ -351,7 +351,7 @@ export default function Index() {
               <ul className="space-y-3 text-background/70">
                 <li className="flex items-center gap-2">
                   <Icon name="Phone" size={18} className="text-primary" />
-                  <a href="tel:88005500500" className="hover:text-primary transition-colors">8 800 550-05-00</a>
+                  <a href="tel:89951508833" className="hover:text-primary transition-colors">8 995 150 88 33</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <Icon name="Mail" size={18} className="text-primary" />
